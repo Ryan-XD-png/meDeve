@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+h1{
+
+    font-size: 3rem;
+    font-weight: 800;
+}
+h2{
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #053C5E;
+
+}
+
+   
+
+li{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    gap: 2rem;
+    form{
+        display: inline;
+        button{
+            
+           margin:0px 0px 1.5px 10px; 
+        }
+        
+    }
+}
+header{
+    
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    h1{
+       color: white;
+    } 
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 3rem;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 25rem;
+    border-radius: 2rem;
+    background-color: #1d283a;
+    margin-bottom: 1.5rem;
+    box-shadow: 1rem 1rem 2rem #012338;
+}
+
+.f-lg{
+    height: 32rem;
+}
+form.f{
+    display: flex;
+    flex-direction: column;
+
+}
+label{
+    color: white;
+    font-size: 1.5rem;
+}
+input{
+
+    margin-bottom: 0.5rem;
+}
+button{
+    margin-top: 1rem;
+}
+.cad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    background-color: #053C5E;
+}
+.menu{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 85vh;
+    padding: 2rem;
+    gap :2rem;
+    background-color: #053C5E;
+    justify-content: space-evenly;
+}
+.items{
+
+    background-color: rgba(249, 236, 219, 0.586);
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem 2rem #012338;
+    
+    height: 100%;
+    padding: 3rem;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.maior{
+    height: 32rem;
+}
+.mini{
+    width: auto;
+    align-self: center;
+}
+.chek{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+.c{
+    display: none;
+    background-color: chartreuse;
+}
+@media (max-width:400px){
+    .menu{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        height: auto;
+    }
+    .s{
+    margin-bottom: 1rem;
+}
+}
